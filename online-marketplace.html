@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <link href="css/bootstrap.css" rel="stylesheet" type="text/css">
+    <link href="css/styles.css" rel="stylesheet" type="text/css">
+    <script src="js/jquery-3.2.1.js"></script>
+    <script src="js/scripts.js"></script>
+    <title>T-Shirt Marketplac</title>
+  </head>
+  <body>
+    <div class="container-fluid">
+      <div class="jumbotron">
+        <h1>T-Shirt Marketplace</h1>
+        <p>Your online source for T-shirts!</p>
+
+      </div>
+      <div class="row">
+        <div class="col-xs-4">
+          <div class="panel panel-info">
+            <div class="panel-heading">
+              <h2 class="panel-title">T-Shirt Crazy</h2>
+            </div>
+            <div class="panel-body">
+              <p>This T-shirt is crazy!</p>
+              <img src="img/crazy.jpg" alt="Crazy T-shirt">
+            </div>
+          </div>
+        </div>
+        <div class="col-xs-4">
+          <div class="panel panel-info">
+            <div class="panel-heading">
+              <h2 class="panel-title">T-Shirt Keep Calm</h2>
+            </div>
+            <div class="panel-body">
+              <p>This Keep Calm T-shirt!</p>
+              <img src="img/calm.jpg" alt="Keep Calm T-shirt">
+            </div>
+          </div>
+        </div>
+        <div class="col-xs-4">
+          <div class="panel panel-info">
+            <div class="panel-heading">
+              <h2 class="panel-title">T-Shirt Code</h2>
+            </div>
+            <div class="panel-body">
+              <p>This T-shirt is coder friendly!</p>
+              <img src="img/code.jpeg" alt="Code T-shirt">
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="container">
+        <h1>Order Form</h1>
+        <p>Select your T-Shirt</p>
+        <select class="form-control" id="tshirt">
+          <option>T-Shirt Crazy</option>
+          <option>T-Shirt Keep Calm</option>
+          <option>T-Shirt Code</option>
+        </select>
+        <p></p>
+        <div>
+          <form id="formOrder">
+            <div class="form-group">
+              <label for="firstName">First Name: </label>
+              <input id="firstName" class="form-control" type="text">
+            </div>
+            <div class="form-group">
+              <label for="lastName">Last Name: </label>
+              <input id="lastName" class="form-control" type="text">
+            </div>
+            <div class="form-group">
+              <label for="address">Address: </label>
+              <input id="address" class="form-control" type="text">
+            </div>
+            <button type="submit" class="btn">Submit Order</button>
+          </form>
+        </div>
+        <div id="receipt">
+          <div class="panel panel-success">
+            <div class="panel-heading">
+              <h2>Hello <span class="firstName"></span> <span class="lastName"></span></h2>
+            </div>
+            <p>Thank you for shopping with us. Your <span class="tshirt"></span> has been shipped to: <span class="address"></span></p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

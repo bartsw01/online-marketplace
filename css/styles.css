@@ -1,0 +1,16 @@
+body{
+  background-color: #d7e2f4;
+}
+img{
+  width: 100%;
+}
+#receipt{
+  display: none;
+}
+.panel-info > .panel-heading {
+  background-color: #b5ccf2;
+}
+.panel-info{
+  border-color: #b5ccf2;
+  height: 450px;
+}
