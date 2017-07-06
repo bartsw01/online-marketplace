@@ -14,3 +14,6 @@ img{
   border-color: #b5ccf2;
   height: 450px;
 }
+.jumbotron {
+  text-align: center;
+}
